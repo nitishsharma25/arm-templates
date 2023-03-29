@@ -1,0 +1,155 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2021-05-01"
+        },
+        "administratorLogin": {
+            "value": "nitish"
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "serverName": {
+            "value": "nitish-magento-private"
+        },
+        "serverEdition": {
+            "value": "MemoryOptimized"
+        },
+        "vCores": {
+            "value": 4
+        },
+        "storageSizeGB": {
+            "value": 128
+        },
+        "haEnabled": {
+            "value": "ZoneRedundant"
+        },
+        "availabilityZone": {
+            "value": ""
+        },
+        "standbyAvailabilityZone": {
+            "value": ""
+        },
+        "version": {
+            "value": "8.0.21"
+        },
+        "tags": {
+            "value": {}
+        },
+        "firewallRules": {
+            "value": {
+                "rules": []
+            }
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        },
+        "vmName": {
+            "value": "Standard_E4ds_v4"
+        },
+        "storageIops": {
+            "value": 2000
+        },
+        "storageAutogrow": {
+            "value": "Enabled"
+        },
+        "autoIoScaling": {
+            "value": "Disabled"
+        },
+        "vnetData": {
+            "value": {
+                "isLoading": false,
+                "virtualNetworkName": "nitishsharma-magento-private-vnet",
+                "virtualNetworkId": "/subscriptions/2941a09d-7bcf-42fe-91ca-1765f521c829/resourceGroups/nitishsharma-magento-private/providers/Microsoft.Network/virtualNetworks/nitishsharma-magento-private-vnet",
+                "subnetList": [
+                    {
+                        "subnetName": "default",
+                        "subnetNeedsUpdate": false,
+                        "subnetProperties": {
+                            "addressPrefix": "10.1.10.0/24",
+                            "delegations": [
+                                {
+                                    "name": "dlg-Microsoft.DBforMySQL-flexibleServers",
+                                    "properties": {
+                                        "serviceName": "Microsoft.DBforMySQL/flexibleServers"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "subnetName": "default",
+                "virtualNetworkSubscriptionName": "MySQL aaS",
+                "virtualNetworkAddressPrefix": "10.1.10.0/24",
+                "virtualNetworkResourceGroupName": "nitishsharma-magento-private",
+                "location": "eastus",
+                "subscriptionId": "2941a09d-7bcf-42fe-91ca-1765f521c829",
+                "subnetProperties": {
+                    "addressPrefix": "10.1.10.0/24",
+                    "delegations": [
+                        {
+                            "name": "dlg-Microsoft.DBforMySQL-flexibleServers",
+                            "properties": {
+                                "serviceName": "Microsoft.DBforMySQL/flexibleServers"
+                            }
+                        }
+                    ]
+                },
+                "subnetNeedsUpdate": false,
+                "isNewVnet": true,
+                "delegatedSubnetArguments": {
+                    "SubnetArmResourceId": "/subscriptions/2941a09d-7bcf-42fe-91ca-1765f521c829/resourceGroups/nitishsharma-magento-private/providers/Microsoft.Network/virtualNetworks/nitishsharma-magento-private-vnet/subnets/default"
+                },
+                "usePrivateDnsZone": true,
+                "isNewPrivateDnsZone": true,
+                "privateDnsResourceGroup": "nitishsharma-magento-private",
+                "privateDnsSubscriptionId": "2941a09d-7bcf-42fe-91ca-1765f521c829",
+                "privateDnsZoneName": "nitish-magento-private.private.mysql.database.azure.com",
+                "privateDnsZoneSubscription": "MySQL aaS",
+                "privateDnsZoneArguments": {
+                    "PrivateDnsZoneArmResourceId": "/subscriptions/2941a09d-7bcf-42fe-91ca-1765f521c829/resourceGroups/nitishsharma-magento-private/providers/Microsoft.Network/privateDnsZones/nitish-magento-private.private.mysql.database.azure.com"
+                },
+                "linkVirtualNetwork": true,
+                "Network": {
+                    "DelegatedSubnetResourceId": "/subscriptions/2941a09d-7bcf-42fe-91ca-1765f521c829/resourceGroups/nitishsharma-magento-private/providers/Microsoft.Network/virtualNetworks/nitishsharma-magento-private-vnet/subnets/default",
+                    "PrivateDnsZoneResourceId": "/subscriptions/2941a09d-7bcf-42fe-91ca-1765f521c829/resourceGroups/nitishsharma-magento-private/providers/Microsoft.Network/privateDnsZones/nitish-magento-private.private.mysql.database.azure.com"
+                }
+            }
+        },
+        "virtualNetworkDeploymentName": {
+            "value": "virtualNetwork_20230324T074708737Z"
+        },
+        "virtualNetworkLinkDeploymentName": {
+            "value": "virtualNetworkLink_20230324T074708737Z"
+        },
+        "privateDnsZoneDeploymentName": {
+            "value": "privateDnsZone_20230324T074708737Z"
+        },
+        "identityData": {
+            "value": {}
+        },
+        "dataEncryptionData": {
+            "value": {}
+        },
+        "serverParameters": {
+            "value": []
+        },
+        "aadEnabled": {
+            "value": false
+        },
+        "aadData": {
+            "value": {}
+        },
+        "guid": {
+            "value": "bf1d7572c3324518ad1722a8bee146bd"
+        }
+    }
+}
