@@ -1,18 +1,60 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
       "serverName": {
-        "value": "GEN-UNIQUE"
+          "value": "nitish-flex"
+      },
+      "databaseName": {
+          "value": "magento"
       },
       "dnsZoneName": {
-        "value": "GEN-UNIQUE"
-      },    
+          "value": "nitish-flex"
+      },
+      "dnsZoneFqdn": {
+          "value": "nitish-flex.private.mysql.database.azure.com"
+      },
       "administratorLogin": {
-        "value": "GEN-UNIQUE-8"
+          "value": "nitish"
       },
       "administratorLoginPassword": {
-        "value": "GEN-PASSWORD"
+          "value": null
+      },
+      "skuName": {
+          "value": "Standard_B1s"
+      },
+      "storageSizeGB": {
+          "value": 20
+      },
+      "storageIops": {
+          "value": 360
+      },
+      "skuTier": {
+          "value": "Burstable"
+      },
+      "mysqlVersion": {
+          "value": "8.0.21"
+      },
+      "location": {
+          "value": "eastus2"
+      },
+      "backupRetentionDays": {
+          "value": 7
+      },
+      "geoRedundantBackup": {
+          "value": "Disabled"
+      },
+      "virtualNetworkName": {
+          "value": "azure_mysql_vnet"
+      },
+      "subnetName": {
+          "value": "azure_mysql_subnet"
+      },
+      "vnetAddressPrefix": {
+          "value": "10.0.0.0/24"
+      },
+      "mySqlSubnetPrefix": {
+          "value": "10.0.0.0/28"
       }
-    }
   }
+}
